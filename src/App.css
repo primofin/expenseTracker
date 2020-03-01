@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 20px;
+  color: #071108;
 }
+.main-container {
+  width: 300px;
+  margin: 0 auto;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inc-exp-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 8px;
+  box-shadow: 2px 3px 2px 3px #dedede;
+}
+.income-box {
+  flex-grow: 1;
+  border-right: 1px solid #dedede;
+  height: 4em;
+}
+.expense-box {
+  flex-grow: 1;
+  margin: 0 auto;
+}
+.income-box h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.expense-box h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 3px;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+input {
+  width: 100%;
+  border: 1px solid;
+  padding: 10px 0;
+  margin-bottom: 1em;
+}
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.1em;
+  background-color: #A5243D;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/*History*/
+.list-container {
+  list-style: none;
+  padding-left: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* transaction */
+.transContainer{
+  display: flex;
+  flex-direction: row;
+}
+.transName{
+  flex:1
 }
